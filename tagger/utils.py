@@ -17,17 +17,17 @@ from tagger.interrogator import WaifuDiffusionInterrogator  # pylint: disable=E0
 preset = Preset(Path(scripts.basedir(), 'presets'))
 
 interrogators: Dict[str, Interrogator] = {
-    'wd14-vit.v1': WaifuDiffusionInterrogator(
-        'WD14 vit-tagger-v3',
+    'wd14-vit.v3': WaifuDiffusionInterrogator(
+        'WD14 ViT v3',
         repo_id='SmilingWolf/wd-vit-tagger-v3'
     ),
-    'wd14-vit.v1': WaifuDiffusionInterrogator(
-        'ConvNeXTV3',
+    'wd14-convnext.v3': WaifuDiffusionInterrogator(
+        'WD14 ConvNeXTV3',
         repo_id='SmilingWolf/wd-convnext-tagger-v3'
     ),
-    'wd14-vit.v1': WaifuDiffusionInterrogator(
+    'wd14-swinv2-v3': WaifuDiffusionInterrogator(
         'WD14 SwinV2 v3',
-        repo_id='wd-swinv2-tagger-v3'
+        repo_id='SmilingWolf/wd-swinv2-tagger-v3'
     ),
     'wd14-vit.v2': WaifuDiffusionInterrogator(
         'WD14 ViT v2',
