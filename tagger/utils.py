@@ -18,8 +18,16 @@ preset = Preset(Path(scripts.basedir(), 'presets'))
 
 interrogators: Dict[str, Interrogator] = {
     'wd14-vit.v1': WaifuDiffusionInterrogator(
-        'WD14 ViT v1',
-        repo_id='SmilingWolf/wd-v1-4-vit-tagger'
+        'WD14 vit-tagger-v3',
+        repo_id='SmilingWolf/wd-vit-tagger-v3'
+    ),
+    'wd14-vit.v1': WaifuDiffusionInterrogator(
+        'ConvNeXTV3',
+        repo_id='SmilingWolf/wd-convnext-tagger-v3'
+    ),
+    'wd14-vit.v1': WaifuDiffusionInterrogator(
+        'WD14 SwinV2 v3',
+        repo_id='wd-swinv2-tagger-v3'
     ),
     'wd14-vit.v2': WaifuDiffusionInterrogator(
         'WD14 ViT v2',
